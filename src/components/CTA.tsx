@@ -2,11 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, CheckCircle2 } from 'lucide-react';
 
-interface CTAProps {
-  onDownloadPdf?: () => void;
-}
-
-export const CTA: React.FC<CTAProps> = () => {
+export const CTA: React.FC = () => {
   return (
     <section className="py-20 md:py-28 border-t border-stone-200 bg-[#faf8f5] text-center relative overflow-hidden">
       {/* Background glow */}

@@ -15,11 +15,9 @@ import { Workflow } from './components/Workflow';
 import { Conditions } from './components/Conditions';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
-import { PdfExport } from './components/PdfExport';
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
-  const [isPdfModalOpen, setIsPdfModalOpen] = useState<boolean>(false);
 
   // Check auth session on load
   useEffect(() => {
@@ -79,7 +77,6 @@ export default function App() {
       {/* Header Navigation */}
       <HeaderNav
         onLogout={handleLogout}
-        onDownloadPdf={() => setIsPdfModalOpen(true)}
       />
 
       {/* Main Proposal Body */}
@@ -106,17 +103,11 @@ export default function App() {
         <Conditions />
 
         {/* 8. Final CTA */}
-        <CTA onDownloadPdf={() => setIsPdfModalOpen(true)} />
+        <CTA />
       </main>
 
       {/* Footer */}
       <Footer />
-
-      {/* PDF Export Modal */}
-      <PdfExport
-        isOpen={isPdfModalOpen}
-        onClose={() => setIsPdfModalOpen(false)}
-      />
     </div>
   );
 }
