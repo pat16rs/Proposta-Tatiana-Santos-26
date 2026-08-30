@@ -1,0 +1,6 @@
+{
+  "name": "Proposta Comercial - Gestão de Redes Sociais",
+  "description": "Proposta comercial privada e personalizada para gestão de redes sociais (Cabeleireiro + Moda)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
