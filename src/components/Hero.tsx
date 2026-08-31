@@ -41,12 +41,12 @@ export const Hero: React.FC = () => {
 
             {/* Main Headline */}
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight text-stone-900 leading-[0.96] sm:leading-[1.08] text-balance">
+              <h1 className="text-[2.7rem] sm:text-5xl lg:text-6xl font-display font-bold tracking-tight text-stone-900 leading-[0.9] sm:leading-[1.08] text-balance max-w-[320px] sm:max-w-none">
                 Gestão de <br className="hidden sm:block" />
                 <span className="font-editorial font-normal text-stone-600">Redes Sociais</span>
               </h1>
               
-              <p className="text-base sm:text-xl text-stone-600 font-sans leading-relaxed max-w-xl sm:max-w-2xl font-light text-balance">
+              <p className="text-base sm:text-xl text-stone-600 font-sans leading-relaxed max-w-[17.5rem] sm:max-w-2xl font-light text-balance">
                 Uma estratégia digital pensada para dar visibilidade, consistência e personalidade aos seus dois negócios.
               </p>
             </div>
@@ -56,14 +56,14 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="inline-flex items-center p-1.5 bg-stone-100/90 border border-stone-200 rounded-2xl gap-2 shadow-inner"
+              className="inline-flex flex-wrap items-center p-1.5 bg-stone-100/90 border border-stone-200 rounded-2xl gap-2 shadow-inner"
             >
-              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white border border-stone-200/80 text-xs font-semibold text-stone-800 shadow-sm">
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white border border-stone-200/80 text-xs sm:text-sm font-semibold text-stone-800 shadow-sm">
                 <Scissors className="w-3.5 h-3.5 text-stone-700" />
                 <span>Cabeleireiro</span>
               </div>
               <span className="text-stone-400 text-xs font-mono font-bold">+</span>
-              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white border border-stone-200/80 text-xs font-semibold text-stone-800 shadow-sm">
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white border border-stone-200/80 text-xs sm:text-sm font-semibold text-stone-800 shadow-sm">
                 <Shirt className="w-3.5 h-3.5 text-stone-700" />
                 <span>Moda</span>
               </div>

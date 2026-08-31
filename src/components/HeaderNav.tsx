@@ -35,15 +35,15 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
       id="main-header"
       className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/90 py-3 sm:py-3.5 shadow-xs transition-shadow duration-200"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
         {/* Brand & Proposal context */}
-        <a href="#hero" className="flex items-center space-x-3 group min-w-0 flex-shrink">
-          <div className="w-8 h-8 rounded-lg bg-stone-900 border border-stone-800 flex-shrink-0 flex items-center justify-center text-xs font-mono font-bold text-white shadow-sm">
+        <a href="#hero" className="flex items-center space-x-2.5 sm:space-x-3 group min-w-0 flex-shrink">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-stone-900 border border-stone-800 flex-shrink-0 flex items-center justify-center text-[11px] sm:text-xs font-mono font-bold text-white shadow-sm">
             PF
           </div>
-          <div className="min-w-0">
-            <div className="flex items-center flex-wrap gap-x-2.5 gap-y-1">
-              <span className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-stone-900 truncate">
+          <div className="min-w-0 overflow-hidden">
+            <div className="flex items-center flex-wrap gap-x-2 gap-y-1">
+              <span className="text-[11px] sm:text-sm font-semibold tracking-wider uppercase text-stone-900 truncate max-w-[210px] sm:max-w-none">
                 {proposalData.brandName}
               </span>
               <span className="hidden sm:inline-block text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-stone-100 text-stone-600 border border-stone-200 whitespace-nowrap">
@@ -82,7 +82,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
         <div className="flex lg:hidden items-center space-x-2">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 text-stone-800 hover:text-stone-950 bg-white hover:bg-stone-50 border border-stone-200 rounded-lg shadow-xs active:scale-95 transition-colors cursor-pointer"
+            className="w-11 h-11 flex items-center justify-center text-stone-800 hover:text-stone-950 bg-white hover:bg-stone-50 border border-stone-200 rounded-xl shadow-xs active:scale-95 transition-colors cursor-pointer"
             aria-label={isMobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
           >
             {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
