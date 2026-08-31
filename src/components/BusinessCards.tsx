@@ -92,7 +92,7 @@ export const BusinessCards: React.FC = () => {
                   {hairFocusPoints.map((item, idx) => (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-xl bg-stone-50 border border-stone-200/80 space-y-1"
+                      className="p-3.5 rounded-xl bg-stone-50 border border-stone-200/80 space-y-1 min-w-0"
                     >
                       <div className="flex items-center space-x-2 text-xs font-semibold text-stone-800">
                         <span className="w-1.5 h-1.5 rounded-full bg-stone-400 shrink-0"></span>

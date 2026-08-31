@@ -41,12 +41,12 @@ export const Hero: React.FC = () => {
 
             {/* Main Headline */}
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight text-stone-900 leading-[1.08]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight text-stone-900 leading-[0.96] sm:leading-[1.08] text-balance">
                 Gestão de <br className="hidden sm:block" />
                 <span className="font-editorial font-normal text-stone-600">Redes Sociais</span>
               </h1>
               
-              <p className="text-lg sm:text-xl text-stone-600 font-sans leading-relaxed max-w-2xl font-light">
+              <p className="text-base sm:text-xl text-stone-600 font-sans leading-relaxed max-w-xl sm:max-w-2xl font-light text-balance">
                 Uma estratégia digital pensada para dar visibilidade, consistência e personalidade aos seus dois negócios.
               </p>
             </div>

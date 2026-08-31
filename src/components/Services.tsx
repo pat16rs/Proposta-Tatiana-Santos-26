@@ -124,7 +124,7 @@ Uma abordagem integrada que combina estratégia, criatividade e execução para 
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono transition-all duration-200 cursor-pointer shadow-xs active:scale-95 ${
+                  className={`inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-mono transition-all duration-200 cursor-pointer shadow-xs active:scale-95 ${
                     isActive
                       ? 'bg-stone-900 text-white border border-stone-900 shadow-sm font-semibold'
                       : 'bg-white hover:bg-stone-100/80 text-stone-700 hover:text-stone-950 border border-stone-200/80 font-medium'
@@ -136,9 +136,9 @@ Uma abordagem integrada que combina estratégia, criatividade e execução para 
                       isActive ? 'bg-white' : 'bg-stone-400'
                     }`}
                   />
-                  <span>{cat.label}</span>
+                  <span className="whitespace-nowrap">{cat.label}</span>
                   <span
-                    className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
+                    className={`text-[9px] sm:text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
                       isActive ? 'bg-stone-800 text-stone-200' : 'bg-stone-100 text-stone-500'
                     }`}
                   >
