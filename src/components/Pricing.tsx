@@ -85,7 +85,7 @@ export const Pricing: React.FC<PricingProps> = () => {
                       {plan.price} {plan.currency}
                     </span>
                     <span className="text-xs text-stone-500 font-mono">
-                      / {plan.period}
+                      / {plan.period} +IVA
                     </span>
                   </div>
 

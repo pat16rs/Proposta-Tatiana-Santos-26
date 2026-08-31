@@ -133,7 +133,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                             )}
                           </div>
                           <span className={`text-lg font-bold font-display ${isSelected ? 'text-white' : 'text-stone-900'}`}>
-                            {p.price} €<span className={`text-xs font-normal font-sans ${isSelected ? 'text-stone-300' : 'text-stone-500'}`}>/mês</span>
+                            {p.price} €<span className={`text-xs font-normal font-sans ${isSelected ? 'text-stone-300' : 'text-stone-500'}`}>/mês +IVA</span>
                           </span>
                         </div>
                         <span className={`text-[10px] pt-2 border-t mt-2 font-mono block ${isSelected ? 'text-stone-300 border-stone-800' : 'text-stone-500 border-stone-200'}`}>

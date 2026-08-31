@@ -175,7 +175,7 @@ export const PdfExport: React.FC<PdfExportProps> = ({ isOpen, onClose }) => {
       doc.setFontSize(8);
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(cGray[0], cGray[1], cGray[2]);
-      doc.text('/ mês', planX + 28, currentY + 18);
+      doc.text('/ mês +IVA', planX + 28, currentY + 18);
 
       // Tagline
       doc.setFontSize(7.5);
